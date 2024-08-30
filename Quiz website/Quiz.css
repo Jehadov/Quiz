@@ -1,0 +1,408 @@
+/* Controls full items */
+*{
+    color: white;
+
+}
+/* text */
+
+/* BACK GROUND */
+body{
+    background-image: url('https://i.pinimg.com/originals/77/ca/a3/77caa32884d735d439ade45ba37feaf2.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Header Style */
+
+header{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(1,auto);
+
+}
+
+.all-items-in-header{
+    grid-column: 2/ span 3;
+    grid-row: 1;
+    background: rgba(0, 255, 242, 0);
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(1,auto);
+
+
+}
+
+
+.Title-editing{
+    font-size: 46px;
+    color: rgb(43, 255, 0);
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+
+
+#headerlist{
+    grid-column: 2/ span 3;
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(1,auto);
+    list-style-type: none;
+    
+}
+
+
+.headeritems{
+ grid-column:1 / span auto ;
+ grid-row: 1;
+ align-self: center;
+ font-size: 30px;
+ text-align: center;
+
+}
+
+.links{
+    text-decoration: none;
+    position: relative;
+    
+}
+.links:hover{
+    color: rgb(43, 255, 0);
+
+}
+.links::after{
+position: absolute;
+ content: '';
+ background: rgb(0, 255, 55);
+ height: 0.17rem;
+ width: 50%;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ margin: 0 auto;
+ 
+}
+.links::after{
+    transform: scale(0);
+    transition: transform 0.5s ease;
+
+}
+.links:hover::after{
+    transform: scale(1.3);
+
+}
+/* End header styling */
+
+
+
+
+/* main editing */
+
+/* log in Page */
+main{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(8,auto);    
+    position: relative;
+
+}
+#timeing{
+    grid-column: 5;
+    grid-row: 2;
+    color: red;
+    background: rgba(255, 255, 255, 0.836);
+    font-size: 33px;
+    text-align: center;
+    font-family:cursive;
+}
+#login-Quiz-section{
+    height: auto;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 8;
+    display: flex;
+    flex-direction: column;
+    background: rgba(20, 19, 19, 0.918);
+
+}
+
+#login-Quiz-section div{
+    display: flex;
+    flex-direction: row;
+    margin-top:3%;
+    margin-bottom: 7%;
+    margin-left: 20%;
+}
+
+.lables-of-First-and-last-name{
+    color: rgb(43, 255, 0);
+    text-align: center;
+    align-self: center;
+    font-size: x-large;
+    margin-right: 10%;
+
+}
+#instructions{
+    font-size: x-large;
+    font-family: cursive;
+   
+    color: rgb(43, 255, 0);
+    text-align: center;
+    
+
+}
+#Firstname{
+    height: 25px;
+    width: auto;    
+    align-self: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20PX;
+
+}
+#Lastname{
+    height: 25px;
+    width: auto;    
+    align-self: center;
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20PX;
+
+}
+
+
+/* button style */
+#login{
+    height: auto;
+    width: 30%;
+    margin-left:30%;
+    color: greenyellow;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    margin-bottom:3%;
+  
+}
+#login strong h2{
+    font-size: x-large;
+    font-family: bold;
+    color: rgb(22, 117, 0);
+    margin: 0;
+
+}
+#login:hover{
+    color: greenyellow;
+    background: rgb(9, 255, 0);
+    
+}
+#login strong h2:hover{
+    color: white;
+
+}
+
+/*end  button Style */
+
+/* End of login */
+
+
+/* Start Quiz */
+#Starting-Quiz-section{
+    padding-bottom: 2%;
+    height: auto;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 8;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;  /* PUSH THE BUTTON TO CENTER */
+    background: rgba(82, 69, 69, 0.918);    
+
+}
+
+
+#Starting-Quiz-section div{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+  
+  
+   
+}
+#Starting-Quiz-section div input{
+    margin-right: 30px;
+  
+}
+
+#Qustion{
+    font-family: bold;
+    font-size: 23px;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: calc(130%-100%);
+    margin-top: 0;
+  
+
+}
+
+#numper-of-Qustion{
+    font-family: bold;
+    font-size: 23px;
+    margin-bottom: 0;
+     
+}
+
+/* Labels = Options of input ratio */
+.Answers{
+    font-family:serif ;
+    margin-top: 2px;
+ 
+
+}
+
+/* next button */
+#Next1{
+    width: 40%;
+    height: auto;
+    border-radius: 220px;
+    color: greenyellow;
+    background: rgba(255, 255, 255, 0.68);
+    margin-left: 2%;
+    font-size: x-large;
+    font-family: cursive;
+    margin-bottom: 50px;
+
+}
+#Next1:hover{
+    color: rgb(63, 63, 63);
+    background: rgb(81, 255, 0);
+
+    
+}
+#NextSubmit{
+    font-size: x-large;
+    font-family: bold;
+    color: rgb(170, 0, 255);
+    margin: 0;
+
+}
+#NextSubmit:hover{
+    color: white;
+
+}
+
+/* end next button */
+
+
+
+
+/* Resuls  */
+#result{
+    padding-bottom: 2%;
+    height: auto;
+    grid-column: 2 / span 3;
+    grid-row: 1 / span 8;
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;  /* PUSH THE BUTTON TO CENTER */
+    background: rgba(255, 255, 255, 0.699);
+    position: relative;
+    
+}
+#result div{
+    font-family: cursive;
+    font-size: x-large;
+    margin: 30px;
+    color: rgb(63, 63, 63);
+
+}
+#result-status{
+    font-family: cursive;
+    font-size: x-large;
+    margin: 30px;
+    color: rgb(63, 63, 63);
+
+}
+#Submit{
+    width: 40%;
+    height: auto;
+    border-radius: 220px;
+    color: greenyellow;
+    background: rgba(255, 255, 255, 0.68);
+    margin-left: 2%;
+    font-size: x-large;
+    font-family: cursive;
+    margin-bottom: 50px;
+}
+#Submit:hover{
+    color: rgb(63, 63, 63);
+    background: rgb(81, 255, 0);
+
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 1230px ) {
+
+   
+    #Next1{
+        width: auto;
+    }
+    
+}
+
+@media all and (max-width: 600px ) {
+
+    .textsize{
+        font-size:1.2rem;
+    }
+    #Firstname{
+        width: 70%;
+        height: 12px;
+    }
+    #Lastname{
+        width: 70%;
+        height: 12px;
+    }
+    
+    #login{
+      
+
+      grid-column: 1 /3;
+        
+    }
+    .Answers{
+        font-size:0.8rem;
+    }
+    #Qustion{
+        font-size:1.2rem;
+    }
+    #numper-of-Qustion{
+        font-size:1.3rem;
+    }
+    #NextSubmit{
+        font-size: medium;
+        
+    }
+    #Next1{
+        width: auto;
+    }
+}
+
+@media all and (max-width: 340px ) {
+
+    .textsize{
+        font-size:0.9rem;
+    }
+    .Title-editing{
+        font-size:1.7rem;
+    }
+    
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Quiz.css">
+  <title>Quiz</title>
+</head>
+<body>
+  <header>
+
+    <!-- Navbar -->
+    <div class="all-items-in-header">
+     <h2><strong class="Title-editing">Quiz</strong></h2>
+
+     <!-- Navbar list -->
+     <ul id="headerlist">
+      <li class="headeritems"><a class="links " href=""></a></li>
+      <li class="headeritems"><a class="links textsize" onclick="NextQuistion()" href="#Next1">Next</a></li>
+      <li class="headeritems"><a class="links textsize" onclick="PreviousQuistion()" href="#Next1">Previous</a></li>
+      </ul>
+    </div>
+  </header>
+  <main>
+        
+    <!-- Main editing  -->
+    <section id="login-Quiz-section">
+
+      <!-- Interface Page -->
+      <p id="instructions">Please enter your first name and last name to begin the quiz:</p>
+
+      <div> 
+        <label for="Firstname" class="lables-of-First-and-last-name textsize">Firstname</label>
+        <input type="text" name="Firstname" id="Firstname" placeholder="firstname">
+      </div>
+
+      <div> 
+        <lable for="Lastname" class="lables-of-First-and-last-name textsize">Lastname</lable>
+        <input type="text" name="Lastname" id="Lastname" placeholder="Lastname">
+      </div>
+
+      <button id="login" onclick="SaveDataStartQuiz()">
+        <strong><h2 class="textsize">Start Quiz</h2></strong>
+      </button>
+
+    </section>
+      
+    <!-- 59 second to finsh Quiz -->
+    <div id="timeing"></div>
+ 
+    <!-- Starting Quiz -->
+    <section id="Starting-Quiz-section">
+             
+      <p id="numper-of-Qustion"></p>
+      <div><p id="Qustion"></p></div>
+           
+      <div><input type="radio" name="Answer" onclick="clk()" class="Ans" style="height:20px;" placeholder="Qustion"><label for="Answer1" class="Answers"></label></div>
+      <div><input type="radio" name="Answer" onclick="clk()" class="Ans" style="height:20px;" placeholder="Qustion"><label for="Answer2" class="Answers"></label></div>
+      <div><input type="radio" name="Answer" onclick="clk()" class="Ans" style="height:20px;" placeholder="Qustion"><label for="Answer3" class="Answers"></label></div>
+      <div><input type="radio" name="Answer" onclick="clk()" class="Ans" style="height:20px;" placeholder="Qustion"><label for="Answer4" class="Answers"></label></div>
+            
+      <button id="Next1" onclick="NextQuistion()">
+        <h2 id="NextSubmit">Next Qustion</h2>
+      </button>
+
+    </section>
+
+    <section id="result">
+        
+      <p id="result-status">congrat my friend you won<p>
+      <div id="grade">you Grade is 6/6</div>
+      <div id="percentage">Grade percentage is 86%</div>
+      <div>Quiz Result in Javascript</div>
+
+      <button id="Submit" onclick="restart()">
+        restart
+      </button>
+
+    </section>
+
+  </main>
+
+  <footer>
+
+  </footer>
+  
+      
+  </script>
+  <script src="Quiz.js"></script>
+</body>
+</html>
